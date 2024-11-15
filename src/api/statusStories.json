@@ -3,7 +3,7 @@
         {
             "name":"@Saurabh@",
             "image": {
-                "src": "https://picsum.photos/id/3/400",
+                "src": "https://picsum.photos/id/3",
                 "width": 100,
                 "height": 100
             },
@@ -11,55 +11,59 @@
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/6/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/6",
+                        "width": 400,
+                        "height": 800
                     }  
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/7/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/7",
+                        "width": 400,
+                        "height": 800
                     }
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/8/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/8",
+                        "width": 400,
+                        "height": 800
                     }   
                 }
             ]
         },
         {
             "name":"@Anshika@",
-            "image": "https://picsum.photos/id/123/400",
+            "image": {
+                        "src": "https://picsum.photos/id/22",
+                        "width": 100,
+                        "height": 100
+                    },
             "items":[
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/21/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/21",
+                        "width": 400,
+                        "height": 800
                     }   
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/22/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/22",
+                        "width": 400,
+                        "height": 800
                     }
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/23/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/23",
+                        "width": 400,
+                        "height": 800
                     }   
                 }
             ]
@@ -67,7 +71,7 @@
         {
             "name":"@Rishabh@",
             "image": {
-                        "src": "https://picsum.photos/id/24/400",
+                        "src": "https://picsum.photos/id/24",
                         "width": 100,
                         "height": 100
                     },
@@ -75,25 +79,25 @@
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/25/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/25",
+                        "width": 400,
+                        "height": 800
                     }
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/61/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/61",
+                        "width": 400,
+                        "height": 800
                     }  
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/15/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/15",
+                        "width": 400,
+                        "height": 800
                     }   
                 }
             ]
@@ -101,33 +105,33 @@
         {
             "name":"@Juhi@",
             "image": {
-                        "src": "https://picsum.photos/id/124/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/124",
+                        "width": 400,
+                        "height": 800
                     },
             "items":[
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/32/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/32",
+                        "width": 400,
+                        "height": 800
                     }  
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/12/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/12",
+                        "width": 400,
+                        "height": 800
                     }   
                 },
                 {
                 "description":"test Description",
                "image": {
-                        "src": "https://picsum.photos/id/133/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/133",
+                        "width": 400,
+                        "height": 800
                     }  
                 }
             ]
@@ -135,7 +139,7 @@
         {
             "name":"@yatharth@",
             "image": {
-                        "src": "https://picsum.photos/id/110/400",
+                        "src": "https://picsum.photos/id/110",
                         "width": 100,
                         "height": 100
                     },
@@ -143,25 +147,25 @@
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/110/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/110",
+                        "width": 400,
+                        "height": 800
                     }  
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/13/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/13",
+                        "width": 400,
+                        "height": 800
                     }  
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/132/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/132",
+                        "width": 400,
+                        "height": 800
                     }
                 }
             ]
@@ -169,7 +173,7 @@
         {
             "name":"@rudra@",
             "image": {
-                        "src": "https://picsum.photos/id/154/400",
+                        "src": "https://picsum.photos/id/154",
                         "width": 100,
                         "height": 100
                     },
@@ -177,25 +181,25 @@
                 {
                  "description":"test Description",
                  "image": {
-                        "src": "https://picsum.photos/id/156/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/156",
+                        "width": 400,
+                        "height": 800
                     }
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/23/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/23",
+                        "width": 400,
+                        "height": 800
                     }   
                 },
                 {
                 "description":"test Description",
                 "image": {
-                        "src": "https://picsum.photos/id/5/400",
-                        "width": 100,
-                        "height": 100
+                        "src": "https://picsum.photos/id/5",
+                        "width": 400,
+                        "height": 800
                     } 
                 }
             ]

@@ -13,7 +13,9 @@
     > * {
         flex: 0 0 auto;
         scroll-snap-align: center;
-        width: auto;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
         box-sizing: border-box;
         justify-content: flex-start;
     }
