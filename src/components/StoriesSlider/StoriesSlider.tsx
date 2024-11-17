@@ -1,39 +1,53 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from '../common/Slider/Slider';
-import json from '../../api/statusStories.json';
-import Card from '../common/Card/Card';
+import Card, {Story} from '../common/Card/Card';
 import s from './StoriesSlider.module.scss';
+import StatusModal from '../StatusModal/StatusModal';
+
+interface Data {
+  stories: Story[];
+}
 
 interface Props {
-
+    data: Data;
 }
 
-export default function StoriesSlider({}: Props) {
-const data = json;
+const StoriesSlider: React.FC<Props> = ({data}) => {
 
-useEffect(()=>{
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [modalData, setModalData] = useState<Story | null>(null);
+
+  useEffect(() => {
     data.stories.forEach((story, index) => {
-        if(index < 4){
-            const preloadImage = new Image();
-            preloadImage.src=`${story.image.src}/${story.image.width}/${story.image.height}`;
-            story.items.forEach((innerstory, index) => {
-                if(index === 0){
-                    const preloadInnerImage = new Image();
-                    preloadInnerImage.src=`${innerstory.image.src}/${innerstory.image.width}/${innerstory.image.height}`;
-                }
-            });
-        }
+      if (index < 4) {
+        const preloadImage = new Image();
+        preloadImage.src = `${story?.image?.src}/${story?.image?.width}/${story?.image?.height}`;
+        story.items.forEach((innerStory:Story, innerIndex: number) => {
+          if (innerIndex === 0) {
+            const preloadInnerImage = new Image();
+            preloadInnerImage.src = `${innerStory?.image?.src}/${innerStory?.image?.width}/${innerStory?.image?.height}`;
+          }
+        });
+      }
     });
-  }, []);   
+  }, []);
+
+  const callback = (data: Story) => {
+    setModalData(data);
+  }
+
   return (
     <div className={s.sliderContainer}>
-        <Slider>
-            {
-                data.stories.map((story)=>{
-                    return <Card data = {story}/>
-                })
-            }
-        </Slider>
+      <Slider>
+        {data.stories.map((story, index) => (
+          <Card key={index} data={story} callBackData = {callback}/>
+        ))}
+      </Slider>
+      {isModalOpen && (
+                <StatusModal key={modalData?.name} data={modalData} onClose={() => setModalOpen(false)} />
+            )}
     </div>
-  )
-}
+  );
+};
+
+export default StoriesSlider;

@@ -8,7 +8,7 @@ const InstagramLogo = () => {
       <i
         style={{
           backgroundImage:
-            'url("https://static.cdninstagram.com/rsrc.php/v3/ym/r/BQdTmxpRI6f.png")',
+            'url("https://static.cdninstagram.com/rsrc.php/v3/y5/r/Wuz-bqD-do0.png")',
           backgroundPosition: '0px 0px',
           backgroundSize: '176px 181px',
           width: '175px',
