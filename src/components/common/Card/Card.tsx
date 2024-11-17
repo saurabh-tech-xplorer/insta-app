@@ -21,15 +21,24 @@ interface CardProps {
 
 const Card: React.FC<Readonly<CardProps>> = ({ data, callBackData }) => {
     const [showActiveGradient, setActiveGradient] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const handleImageLoad = () => {
+        setIsLoading(false);
+    };
+    const handleImageError = () => {
+        setIsLoading(false);
+      };
     const imageUrl = `${data.image?.src}/${data.image?.width}/${data.image?.height}`;
 
     return (
         <div className={`${styles.card}`}>
             <div>
-                <div className={`${styles.imageContainer} ${showActiveGradient && styles.gradientActive}`}>
-                    <img src={imageUrl} alt={data.hl} className={styles.image} onClick={() => {callBackData(data);setActiveGradient(false);}}/> 
+                <div className={`${styles.imageContainer} ${showActiveGradient && !isLoading && styles.gradientActive}`}>
+                    <img src={imageUrl} alt={data.hl} className={styles.image} onClick={() => {callBackData(data);setActiveGradient(false);}} onLoad={handleImageLoad} onError={handleImageError}
+        style={{ display: isLoading ? 'none' : 'block' }}/> 
                 </div>
-                <div className={styles.name}>{data.name}</div>
+                {!isLoading && <div className={styles.name}>{data.name}</div>}
             </div>
         </div>    
     );
