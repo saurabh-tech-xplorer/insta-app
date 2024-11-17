@@ -33,7 +33,7 @@ const StatusModal: React.FC<StatusModalProps> = ({ onClose, data }) => {
         progress[currentStory] = 100;
         return { ...prev, ...progress };
       });
-    }, 40);
+    }, 50);
 
     return () => clearInterval(interval);
   }, [currentStory]);

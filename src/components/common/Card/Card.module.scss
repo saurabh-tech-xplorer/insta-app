@@ -1,6 +1,7 @@
 .card {
     display: flex;
     cursor: pointer;
+    user-select: none;
   
     .imageContainer {
       display: flex;

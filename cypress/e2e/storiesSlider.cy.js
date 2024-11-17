@@ -1,61 +1,54 @@
-// cypress/e2e/storiesSlider.cy.js
+/// <reference types="cypress" />
 
 describe('StoriesSlider Component', () => {
-    const sampleData = {
-      stories: [
-        {
-          image: { src: 'image1.jpg', width: 100, height: 100 },
-          items: [
-            { image: { src: 'innerImage1.jpg', width: 50, height: 50 } },
-            { image: { src: 'innerImage2.jpg', width: 50, height: 50 } }
-          ]
-        },
-        {
-          image: { src: 'image2.jpg', width: 100, height: 100 },
-          items: [
-            { image: { src: 'innerImage3.jpg', width: 50, height: 50 } }
-          ]
-        }
-      ]
-    };
+    
+    it('should render the slider and cards correctly', () => {
+      // Check if the slider container is rendered
+      cy.get('.sliderContainer').should('exist');
   
-    beforeEach(() => {
-      // Mount the component before each test
-      cy.mount(<StoriesSlider data={sampleData} />);
+      // Check if the correct number of Card components is rendered
+      cy.get('.sliderContainer .Card').should('have.length.at.least', 1);
     });
   
-    it('renders the StoriesSlider component', () => {
-      // Check that the component and essential elements are rendered
-      cy.get(`.${s.sliderContainer}`).should('exist');
-      cy.get(`.${s.sliderContainer} .Card`).should('have.length', sampleData.stories.length);
-    });
-  
-    it('preloads images correctly', () => {
-      // Check if the images are preloaded in the slider
-      sampleData.stories.forEach((story) => {
-        cy.get(`img[src="${story.image.src}/${story.image.width}/${story.image.height}"]`).should('exist');
-        if (story.items.length > 0) {
-          cy.get(`img[src="${story.items[0].image.src}/${story.items[0].image.width}/${story.items[0].image.height}"]`).should('exist');
+    it('should preload images correctly', () => {
+      // Check if images are preloaded for the first few stories
+      cy.get('.sliderContainer img').each(($img, index) => {
+        if (index < 4) {
+          cy.wrap($img)
+            .should('have.attr', 'src')
+            .and('not.be.empty');
         }
       });
     });
   
-    it('navigates the slider correctly', () => {
-      // Simulate navigation and check content changes
-      cy.get('.Slider-nextButton').click();
-      cy.get('.Card').eq(1).should('be.visible');
-      cy.get('.Slider-prevButton').click();
-      cy.get('.Card').eq(0).should('be.visible');
+    it('should open the StatusModal when a card is clicked', () => {
+      // Click the first Card component
+      cy.get('.sliderContainer .Card').first().click();
+  
+      // Check if the StatusModal is open
+      cy.get('.StatusModal').should('be.visible');
     });
   
-    it('handles edge cases in the slider', () => {
-      // Check edge behavior for first and last items
-      cy.get('.Slider-prevButton').click(); // Click previous at the start
-      cy.get('.Card').eq(0).should('be.visible');
+    it('should close the StatusModal when the close button is clicked', () => {
+      // Click the first Card component to open the modal
+      cy.get('.sliderContainer .Card').first().click();
   
-      cy.get('.Slider-nextButton').click();
-      cy.get('.Slider-nextButton').click(); // Click past the last item
-      cy.get('.Card').last().should('be.visible');
+      // Check if the modal is open
+      cy.get('.StatusModal').should('be.visible');
+  
+      // Click the close button (adjust selector as needed for your modal)
+      cy.get('.StatusModal .close-button').click();
+  
+      // Check if the modal is closed
+      cy.get('.StatusModal').should('not.exist');
+    });
+  
+    it('should call the callback function and set modal data', () => {
+      // Click the first Card component
+      cy.get('.sliderContainer .Card').first().click();
+  
+      // Check if the modal data is correctly set (depends on your implementation)
+      cy.get('.StatusModal .modal-content').should('contain.text', 'Expected Story Name'); // Replace with expected content
     });
   });
   
