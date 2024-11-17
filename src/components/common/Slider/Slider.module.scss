@@ -3,7 +3,6 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    gap: 16px;
     width: auto;
 
     &::-webkit-scrollbar {
@@ -13,10 +12,13 @@
     > * {
         flex: 0 0 auto;
         scroll-snap-align: center;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
+        width: auto;
         box-sizing: border-box;
         justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    > *:last-child {
+        padding-right: 20px;
     }
 }

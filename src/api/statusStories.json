@@ -1,7 +1,7 @@
 {
     "stories":[
         {
-            "name":"@Saurabh@",
+            "name":"Your Story",
             "image": {
                 "src": "https://picsum.photos/id/3",
                 "width": 100,
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "name":"@Anshika@",
+            "name":"Anshika",
             "image": {
                         "src": "https://picsum.photos/id/22",
                         "width": 100,
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "name":"@Rishabh@",
+            "name":"Rishabh",
             "image": {
                         "src": "https://picsum.photos/id/24",
                         "width": 100,
@@ -103,11 +103,11 @@
             ]
         },
         {
-            "name":"@Juhi@",
+            "name":"Juhi",
             "image": {
                         "src": "https://picsum.photos/id/124",
-                        "width": 400,
-                        "height": 800
+                        "width": 100,
+                        "height": 100
                     },
             "items":[
                 {
@@ -137,7 +137,7 @@
             ]
         },
         {
-            "name":"@yatharth@",
+            "name":"Yatharth",
             "image": {
                         "src": "https://picsum.photos/id/110",
                         "width": 100,
@@ -171,7 +171,7 @@
             ]
         },
         {
-            "name":"@rudra@",
+            "name":"Rudra",
             "image": {
                         "src": "https://picsum.photos/id/154",
                         "width": 100,

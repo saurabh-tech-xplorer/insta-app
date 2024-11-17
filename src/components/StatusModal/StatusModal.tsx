@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Story } from '../common/Card/Card';
 import s from './StatusModal.module.scss';
-import { Story } from '../Card/Card';
 
 interface StatusModalProps {
   onClose: () => void;
@@ -15,7 +15,7 @@ const StatusModal: React.FC<StatusModalProps> = ({ onClose, data }) => {
   useEffect(() => {
     data?.items.forEach((story: Story) => {
       const preloadImage = new Image();
-      preloadImage.src = `${story.image.src}/${story.image.width}/${story.image.height}`;
+      preloadImage.src = `${story?.image?.src}/${story?.image?.width}/${story?.image?.height}`;
     });
   }, [data?.items]);
 
@@ -81,7 +81,7 @@ const StatusModal: React.FC<StatusModalProps> = ({ onClose, data }) => {
       <div className={s.navigation}>
         <div className={s.name_container}>
           <img
-            src={`${data.image.src}/${data.image.width}/${data.image.height}`}
+            src={`${data.image?.src}/${data.image?.width}/${data?.image?.height}`}
             alt="Profile"
             className={s.profileImage}
           />

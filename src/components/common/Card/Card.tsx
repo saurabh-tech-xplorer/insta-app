@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Card.module.scss';
 export interface ImageData {
     src?: string;
@@ -20,13 +20,17 @@ interface CardProps {
 }
 
 const Card: React.FC<Readonly<CardProps>> = ({ data, callBackData }) => {
+    const [showActiveGradient, setActiveGradient] = useState(true);
     const imageUrl = `${data.image?.src}/${data.image?.width}/${data.image?.height}`;
+
     return (
         <div className={`${styles.card}`}>
-            <div className={styles.imageContainer}>
-                <img src={imageUrl} alt={data.hl} className={styles.image} onClick={() => callBackData(data)}/> 
+            <div>
+                <div className={`${styles.imageContainer} ${showActiveGradient && styles.gradientActive}`}>
+                    <img src={imageUrl} alt={data.hl} className={styles.image} onClick={() => {callBackData(data);setActiveGradient(false);}}/> 
+                </div>
+                <div className={styles.name}>{data.name}</div>
             </div>
-            <div className={styles.name}>{data.name}</div>
         </div>    
     );
 };

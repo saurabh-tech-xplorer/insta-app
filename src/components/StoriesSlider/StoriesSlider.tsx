@@ -14,7 +14,7 @@ interface Props {
 
 const StoriesSlider: React.FC<Props> = ({data}) => {
 
-    const [isModalOpen, setModalOpen] = useState(false);
+    const [isModalOpen, setModalOpen] = useState<boolean>(false);
     const [modalData, setModalData] = useState<Story | null>(null);
 
   useEffect(() => {
@@ -33,13 +33,14 @@ const StoriesSlider: React.FC<Props> = ({data}) => {
   }, []);
 
   const callback = (data: Story) => {
+    setModalOpen(true);
     setModalData(data);
   }
 
   return (
     <div className={s.sliderContainer}>
       <Slider>
-        {data.stories.map((story, index) => (
+        {data.stories.map((story: Story, index: number) => (
           <Card key={index} data={story} callBackData = {callback}/>
         ))}
       </Slider>
