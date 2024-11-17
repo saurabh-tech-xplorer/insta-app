@@ -39,7 +39,7 @@ const StatusModal: React.FC<StatusModalProps> = ({ onClose, data }) => {
   }, [currentStory]);
 
   const goToNextStory = () => {
-    if (currentStory < data?.items?.length! ?  data?.items?.length! - 1 : 0) {
+    if (currentStory < data?.items?.length!-1 ?  data?.items?.length! - 1 : 0) {
       setCurrentStory(currentStory + 1);
       progress[currentStory] = 100;
       setProgress((prev) => ({ ...prev, ...progress }));
