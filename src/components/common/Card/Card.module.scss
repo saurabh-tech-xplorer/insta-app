@@ -3,9 +3,6 @@
     cursor: pointer;
   
     .imageContainer {
-      flex: 0 0 108px;
-      height: 108px;
-      width: 100%;
       display: flex;
       padding: 4px;
       &.gradientActive{
@@ -20,14 +17,15 @@
         border-radius: 50%;
       }
       .image {
-        width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 50%;
+        flex: 0 0 85px;
+        height: 85px;
       }
     }
     .name{
-      flex: 0 0 100px;
+      flex: 0 0 80px;
       width: 100%;
       font-weight: bold;
       padding-top: 5px;
