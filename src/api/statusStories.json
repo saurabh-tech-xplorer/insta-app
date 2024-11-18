@@ -1,0 +1,208 @@
+{
+    "stories":[
+        {
+            "name":"Your Story",
+            "image": {
+                "src": "https://picsum.photos/id/3",
+                "width": 100,
+                "height": 100
+            },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/6",
+                        "width": 400,
+                        "height": 800
+                    }  
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/7",
+                        "width": 400,
+                        "height": 800
+                    }
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/8",
+                        "width": 400,
+                        "height": 800
+                    }   
+                }
+            ]
+        },
+        {
+            "name":"Anshika",
+            "image": {
+                        "src": "https://picsum.photos/id/22",
+                        "width": 100,
+                        "height": 100
+                    },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/21",
+                        "width": 400,
+                        "height": 800
+                    }   
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/22",
+                        "width": 400,
+                        "height": 800
+                    }
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/23",
+                        "width": 400,
+                        "height": 800
+                    }   
+                }
+            ]
+        },
+        {
+            "name":"Rishabh",
+            "image": {
+                        "src": "https://picsum.photos/id/24",
+                        "width": 100,
+                        "height": 100
+                    },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/25",
+                        "width": 400,
+                        "height": 800
+                    }
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/61",
+                        "width": 400,
+                        "height": 800
+                    }  
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/15",
+                        "width": 400,
+                        "height": 800
+                    }   
+                }
+            ]
+        },
+        {
+            "name":"Juhi",
+            "image": {
+                        "src": "https://picsum.photos/id/124",
+                        "width": 100,
+                        "height": 100
+                    },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/32",
+                        "width": 400,
+                        "height": 800
+                    }  
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/12",
+                        "width": 400,
+                        "height": 800
+                    }   
+                },
+                {
+                "description":"test Description",
+               "image": {
+                        "src": "https://picsum.photos/id/133",
+                        "width": 400,
+                        "height": 800
+                    }  
+                }
+            ]
+        },
+        {
+            "name":"Yatharth",
+            "image": {
+                        "src": "https://picsum.photos/id/110",
+                        "width": 100,
+                        "height": 100
+                    },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/110",
+                        "width": 400,
+                        "height": 800
+                    }  
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/13",
+                        "width": 400,
+                        "height": 800
+                    }  
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/132",
+                        "width": 400,
+                        "height": 800
+                    }
+                }
+            ]
+        },
+        {
+            "name":"Rudra",
+            "image": {
+                        "src": "https://picsum.photos/id/154",
+                        "width": 100,
+                        "height": 100
+                    },
+            "items":[
+                {
+                 "description":"test Description",
+                 "image": {
+                        "src": "https://picsum.photos/id/156",
+                        "width": 400,
+                        "height": 800
+                    }
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/23",
+                        "width": 400,
+                        "height": 800
+                    }   
+                },
+                {
+                "description":"test Description",
+                "image": {
+                        "src": "https://picsum.photos/id/5",
+                        "width": 400,
+                        "height": 800
+                    } 
+                }
+            ]
+        }
+    ]
+}

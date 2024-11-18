@@ -1,0 +1,24 @@
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: auto;
+
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+
+    > * {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        width: auto;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    > *:last-child {
+        padding-right: 20px;
+    }
+}
